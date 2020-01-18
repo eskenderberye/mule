@@ -11,6 +11,6 @@ http://www.mulesoft.org/schema/mule/ee/tracking http://www.mulesoft.org/schema/m
     <flow name="testAutomation">
         <http:listener config-ref="HTTP_Listener_Configuration" path="/test" doc:name="HTTP"/>
         <set-payload value="{ &quot;status&quot;: &quot;success&quot;   &quot;message&quot;: &quot;hello friends! happy Automation&quot;  }" doc:name="Set Payload"/>
-        <logger message="#[payload]" level="INFO" doc:name="Logger"/>
+        <logger level="INFO" doc:name="Logger"/>
     </flow>
 </mule>
